@@ -1,47 +1,72 @@
 <!DOCTYPE html>
-<html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>سایت ساده من</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 2rem;
-        background: #f7f7f7;
-      }
-      main {
-        max-width: 720px;
-        margin: 0 auto;
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      }
-      button {
-        padding: 0.6rem 1rem;
-        border: none;
-        background: #111827;
-        color: white;
-        border-radius: 8px;
-        cursor: pointer;
-      }
-      button:hover {
-        background: #374151;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>سلام زیبا 👋</h1>
-      <p>این یک سایت استاتیک ساده برای دیپلوی روی Vercel است.</p>
-      <button id="btn">کلیک کن</button>
-    </main>
-    <script>
-      document.getElementById('btn').addEventListener('click', () => {
-        alert('دیپلوی خودکار عالیه! ✨');
-      });
-    </script>
-  </body>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سایت ساده من</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(to bottom, #f9fafb, #e5e7eb);
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      border: 1px solid #d1d5db;
+    }
+    h1 {
+      color: #1e3a8a;
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 18px;
+      color: #374151;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      background: #1e3a8a;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #374151;
+    }
+    .vercel-note {
+      margin-top: 2rem;
+      background: #eef2ff;
+      color: #1e3a8a;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>سلام زیبا 👋</h1>
+    <p>این یک سایت استاتیک ساده برای دیپلوی روی Vercel است.</p>
+    <button id="btn">کلیک کن</button>
+    <div class="vercel-note">🚀 این نسخه از سایت توسط <strong>Vercel</strong> دیپلوی شده است.</div>
+  </main>
+  <script>
+    document.getElementById('btn').addEventListener('click', () => {
+      alert('✨ این پیام توسط Vercel دیپلوی شده است!');
+    });
+  </script>
+</body>
 </html>
