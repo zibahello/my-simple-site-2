@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سایت ساده من</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #f7f7f7;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      }
+      button {
+        padding: 0.6rem 1rem;
+        border: none;
+        background: #111827;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #374151;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>سلام زیبا 👋</h1>
+      <p>این یک سایت استاتیک ساده برای دیپلوی روی Vercel است.</p>
+      <button id="btn">کلیک کن</button>
+    </main>
+    <script>
+      document.getElementById('btn').addEventListener('click', () => {
+        alert('دیپلوی خودکار عالیه! ✨');
+      });
+    </script>
+  </body>
+</html>
