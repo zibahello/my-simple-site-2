@@ -44,15 +44,18 @@
     button:hover {
       background: #374151;
     }
-    .vercel-note {
-      margin-top: 2rem;
-      background: #eef2ff;
-      color: #1e3a8a;
-      padding: 1rem;
+    .notification {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem 1.5rem;
       border-radius: 12px;
-      text-align: center;
-      font-size: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      font-size: 15px;
+      display: none;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -61,11 +64,19 @@
     <h1>سلام زیبا 👋</h1>
     <p>این یک سایت استاتیک ساده برای دیپلوی روی Vercel است.</p>
     <button id="btn">کلیک کن</button>
-    <div class="vercel-note">🚀 این نسخه از سایت توسط <strong>Vercel</strong> دیپلوی شده است.</div>
   </main>
+
+  <div id="notif" class="notification">
+    ✨ این پیام توسط سایت <strong>Vercel</strong> گفته شده است ✨
+  </div>
+
   <script>
     document.getElementById('btn').addEventListener('click', () => {
-      alert('✨ این پیام توسط Vercel دیپلوی شده است!');
+      const notif = document.getElementById('notif');
+      notif.style.display = 'block';
+      setTimeout(() => {
+        notif.style.display = 'none';
+      }, 4000); // نمایش به مدت ۴ ثانیه
     });
   </script>
 </body>
